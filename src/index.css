@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+/* Custom Sports Editorial Typography */
+.font-display {
+  font-family: 'Anton', 'Impact', 'Helvetica Neue', 'Arial Black', sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Smooth Scrolling & Custom Scrollbar */
+html {
+  scroll-behavior: smooth;
+  background-color: #080808;
+  color: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+/* Subtle Film Grain Texture Overlay */
+.grain-overlay {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Vignette Effect */
+.vignette-radial {
+  background: radial-gradient(circle at center, transparent 40%, rgba(8, 8, 8, 0.85) 100%);
+}
+
+/* Sportive Glow */
+.nike-glow {
+  box-shadow: 0 0 60px -15px rgba(255, 255, 255, 0.15);
+}
+
+.nike-glow-accent {
+  box-shadow: 0 0 50px -10px rgba(255, 70, 0, 0.25);
+}
+
+/* Mask Gradients for smooth fade */
+.mask-gradient-b {
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
